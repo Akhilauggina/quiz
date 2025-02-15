@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz</title>
+    <link rel="stylesheet" href="ai.css">
+    <style>
+    body{
+        background-color: rgb(18, 138, 138);
+    }
+    </style>
+</head>
+
+<div class="menu-container">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="logo">
+        <h1 class="website-title">QUIZ TIME</h1>
+        <img src="" alt="Your Logo">
+    </div>
+    <div class="menu" id="myMenu">
+        <h5>  QUIZZES   </h5>
+        <a href="quiz_app.html"> Home</a>
+        <a href="ai.html">Artifical intelligence</a>
+        <a href="science.html">science</a>
+        <a href="About">About</a>
+        
+        
+
+    </div>
+</div>
+    <div class="quiz-container">
+        <div id="timer">Time Remaining: <span id="time">10:00</span></div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="answers"></div>
+        </div>
+        <button id="back-btn" class="btn">Back</button>
+        <button id="next-btn" class="btn">Next</button>
+        <button id="submit-btn" class="btn" style="display: none;">Submit</button>
+        <div id="scoreboard" style="display: none;">
+            <p>Your Score: <span id="score"></span></p>
+            <p id="compliment"></p>
+        </div>
+    </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>

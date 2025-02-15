@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default body margin */
+    background-color: aqua;
+}
+
+.menu-container {
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background for the menu bar */
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+        align-items: center;
+        justify-content: space-between; /* Ensure it's on top */
+}
+.menu-left { /* Container for logo and other left items */
+    display: flex;
+    align-items: center;
+}
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    flex-direction: column;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s; /* Smooth transitions for animation */
+}
+
+.menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 40px; /* Position below the menu bar */
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    /* Add a shadow */
+    overflow-y: auto;
+    max-height: calc(100vh - 50px);
+}
+
+.menu.active {
+    display: block; /* Show the menu */
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: hsl(69, 88%, 52%);
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.correct {
+    background-color: #28a745 !important; /* Green */
+    color: white;
+}
+
+.incorrect {
+    background-color: #dc3545 !important; /* Red */
+    color: white;
+}
